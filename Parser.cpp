@@ -5,20 +5,6 @@
 
 using namespace std;
 
-string BaseParser::makeUID(int number)
-{
-    string word;
- 
-    char unique = 0xFF;
-    word += unique;
-
-    stringstream converter;
-    converter << number;
-    word += converter.str();
-
-    return word;
-}
-
 string& BaseParser::getWord(int begin)
 {
     for (int i = 0; i < patterns.size(); i++)

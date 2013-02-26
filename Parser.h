@@ -6,24 +6,11 @@
 
 using namespace std;
 
-struct Word
-{
-    int begin, end;
-
-    Word(int begin = 0, int end = 0):
-    		begin(begin)
-    	, 	end(end)
-    {}
-};
-
-
 class BaseParser
 {
 protected:
     vector< vector<string> > patterns;
     
-    string makeUID(int number);
-
 public:
 	int totalFiles;
 	int totalLength;
